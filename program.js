@@ -60,4 +60,3 @@ if (YourScore > ComputerScore)
     alert(`You've won the match!\n\nYour score: ${YourScore}\nComputer score: ${ComputerScore}`);
 else if (YourScore < ComputerScore) 
     alert(`You've lost the match!\n\nYour score: ${YourScore}\nComputer score: ${ComputerScore}`);
-else alert(`Draw!\n\nYour score: ${YourScore}\nComputer score: ${ComputerScore}`);
