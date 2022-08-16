@@ -1,10 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 50px;
+}
 .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.round {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.round p {
+    font-size: 30px;
 }
 .buttons {
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: flex;
     gap: 50px;
+}
+button {
+    padding: 3px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+.scores {
+    display: flex;
+    gap: 50px;
+    margin-top: 2px;
+    margin-bottom: 50px;
+}
+.scores p {
+    font-size: 20px;
+}
+.myscore, .computerscore {
+    display: flex;
 }
