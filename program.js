@@ -78,21 +78,24 @@ buttons.forEach(button => button.addEventListener('click', function(e) {
     text.textContent = playRound(e.target.innerText, cS);
     text.style.textAlign = 'center';
     text.style.fontSize = '20px';
+    text.style.color = "#8E9800";
     container.appendChild(text);
     setTimeout(function() {
         container.removeChild(text);
-    }, 1000);
+    }, 1250);
     updateRound();
     updateScore();
     if (MyScore == 3) {
         const won = document.createElement('h1');
         won.style.fontSize = "30px"
+        won.style.color = "green";
         won.textContent = "You've WON the match!";
         container.appendChild(won);
     }
     if (ComputerScore == 3) {
         const lost = document.createElement('h1');
         lost.style.fontSize = "30px";
+        lost.style.color = "red";
         lost.textContent = "You've LOST the match!";
         container.appendChild(lost);
     }
