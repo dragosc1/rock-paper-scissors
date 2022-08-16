@@ -43,20 +43,3 @@ function playRound(playerSelection, computerSelection) {
         else 
             return "Draw!";
 }
-alert('Rock paper scissors!\nScore 3 points to win');
-let counter = 5;
-for (let i = 0; i < counter; i++) {
-    let pS = prompt(`Your choice for the round ${i + 1}`);
-    let cS = getComputerChoice();
-    let result = playRound(pS, cS);
-    if (result == "Draw!")
-        counter++;
-    if (YourScore > 2 || ComputerScore > 2)
-        break;
-    alert(`Computer picked ${cS}\n` + result + `\n\nYour score: ${YourScore}\nComputer score: ${ComputerScore}`);
-    console.log(result);
-}
-if (YourScore > ComputerScore) 
-    alert(`You've won the match!\n\nYour score: ${YourScore}\nComputer score: ${ComputerScore}`);
-else if (YourScore < ComputerScore) 
-    alert(`You've lost the match!\n\nYour score: ${YourScore}\nComputer score: ${ComputerScore}`);
