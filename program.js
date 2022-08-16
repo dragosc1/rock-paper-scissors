@@ -43,3 +43,9 @@ function playRound(playerSelection, computerSelection) {
         else 
             return "Draw!";
 }
+const buttons = document.querySelectorAll('.buttons button');
+buttons.forEach(button => button.addEventListener('click', function(e) {
+    cS = getComputerChoice();
+    playRound(e.target.innerText, cS);
+    console.log(YourScore);
+}));
